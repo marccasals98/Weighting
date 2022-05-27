@@ -16,3 +16,27 @@ Given an unbalanced sample from two or more non-independent variables, this meth
 
 This method prints the output weights in a .txt file.
 
+
+
+## Example:
+
+In this example we are going to see the procedure that have to be followed for installing and using this file.
+
+### Installing and importing packages.
+
+First of all an installation of Python == 3, Pip and Git is needed.
+
+Then, in order to install the package, input the following command to the console:
+
+```
+pip install git+https://github.com/marccasals98/Weighting
+```
+
+Then for importing the package:
+
+```
+import weighting 
+```
+
+
+
