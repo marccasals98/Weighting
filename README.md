@@ -59,7 +59,7 @@ First of all, we need a Dictionary with the desired values that each variable ne
 
 We want these variables to have these balances:
 
-| VARIABLE | VALUES                                      |
+| VARIABLE | VALUES |     |     |    |    |    |    |    |
 |----------|--------|-----|-----|----|----|----|----|----|
 | 'p8tar'  | 50%    | 30% | 20% |    |    |    |    |    |
 | 'trabr'  | 77%    | 23% |     |    |    |    |    |    |
