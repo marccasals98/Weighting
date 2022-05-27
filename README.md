@@ -43,11 +43,11 @@ import weighting
 For reading the .sav we only need to use the function spss_read(). 
 
 ```
-df = functions.spss_read(r"C:\Users\m.casals\Desktop\EG_7C.sav")
+df = functions.spss_read(r"C:\...\file.sav")
 ```
 The r in the begining of the path is because in Python the path are written with this slashes "/" and not this "\" so, for not changing all the slashes of the path, one must only write an r.
 
-r"C:\Users\m.casals\Desktop\EG_7C.sav" = "C:/Users/m.casals/Desktop/EG_7C.sav"
+rr"C:\...\file.sav" = "C:/.../file.sav"
 
 So now df will be a Pandas DataFrame which will contain all the information that can be seen in SPSS.
 
@@ -59,7 +59,7 @@ First of all, we need a Dictionary with the desired values that each variable ne
 
 We want these variables to have these balances:
 
-| 'p8tar' | 'trabr' | 'ciudad' |
+| 'var1' | 'var2' | 'var3' |
 |---------|---------|----------|
 | 50%     | 77%     | 42%      |
 | 30%     | 23%     | 20%      |
@@ -73,9 +73,9 @@ We want these variables to have these balances:
 For balancing our sample this way we need to create a Python Dictionary:
 
 ```
-dic = {'p8tar':[50,30,20],
-      'trabr':[77,23],
-      'ciudad':[42,20,14,5,9,2,2,6]}    
+dic = {'var1':[50,30,20],
+      'var2':[77,23],
+      'var3':[42,20,14,5,9,2,2,6]}    
 ```
 
 Now we can create the new object!
@@ -94,7 +94,7 @@ df_wei.obtain_weights()
 for saving them in a text file we need to do:
 
 ```
-path ="C:/Users/m.casals/Desktop"
+path ="C:/.../Desktop"
 df_wei.print_txt(path)
 ```
 In this case we didn't put the 'r' in front of the path, we only changed the slashes.
@@ -102,7 +102,7 @@ In this case we didn't put the 'r' in front of the path, we only changed the sla
 ## Results:
 
 The following file is unblanced:
-| 'p8tar' | 'trabr' | 'ciudad' |
+| 'var1' | 'var2' | 'var3' |
 |---------|---------|----------|
 | 57.1%   | 87.3%   | 29.7%    |
 | 22.9%   | 12.7%   | 6.5%     |
@@ -114,7 +114,7 @@ The following file is unblanced:
 |         |         | 5.5%     |
 
 We want to achieve:
-| 'p8tar' | 'trabr' | 'ciudad' |
+| 'var1' | 'var2' | 'var3' |
 |---------|---------|----------|
 | 50%     | 77%     | 42%      |
 | 30%     | 23%     | 20%      |
@@ -125,10 +125,10 @@ We want to achieve:
 |         |         | 2%       |
 |         |         | 6%       |
 
-If we compute the Pearson Chi-Squared test of the variables 'p8tar' and 'ciudad' we get a p-value p=0.004 so as we can see they are dependent.
+If we compute the Pearson Chi-Squared test of the variables 'var1' and 'var3' we get a p-value p=0.004 so as we can see they are dependent.
 
 The results that are obtained are:
-| 'p8tar' | 'trabr' | 'ciudad' |
+| 'var1' | 'var2' | 'var3' |
 |---------|---------|----------|
 | 50%     | 76.999% | 42%      |
 | 29.999% | 23%     | 20%      |
