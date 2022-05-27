@@ -125,6 +125,8 @@ We want to achieve:
 |         |         | 2%       |
 |         |         | 6%       |
 
+If we compute the Pearson Chi-Squared test of the variables 'p8tar' and 'ciudad' we get a p-value p=0.004 so as we can see they are dependent.
+
 The results that are obtained are:
 | 'p8tar' | 'trabr' | 'ciudad' |
 |---------|---------|----------|
