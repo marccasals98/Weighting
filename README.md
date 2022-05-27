@@ -59,9 +59,42 @@ First of all, we need a Dictionary with the desired values that each variable ne
 
 We want these variables to have these balances:
 
-| VARIABLE | VALUES |     |     |    |    |    |    |    |
-|----------|--------|-----|-----|----|----|----|----|----|
-| 'p8tar'  | 50%    | 30% | 20% |    |    |    |    |    |
-| 'trabr'  | 77%    | 23% |     |    |    |    |    |    |
-| 'ciudad' | 42%    | 20% | 14% | 5% | 9% | 2% | 2% | 6% |
+| 'p8tar' | 'trabr' | 'ciudad' |
+|---------|---------|----------|
+| 50%     | 77%     | 42%      |
+| 30%     | 23%     | 20%      |
+| 20%     |         | 14%      |
+|         |         | 5%       |
+|         |         | 9%       |
+|         |         | 2%       |
+|         |         | 2%       |
+|         |         | 6%       |
 
+For balancing our sample this way we need to create a Python Dictionary:
+
+```
+dic = {'p8tar':[50,30,20],
+      'trabr':[77,23],
+      'ciudad':[42,20,14,5,9,2,2,6]}    
+```
+
+Now we can create the new object!
+
+```
+df_wei = functions.weighted(df, balance = dic )
+```
+
+### Computing the weights and saving them in a .txt file:
+
+For computing the weights we need to call the method:
+
+```
+df_wei.obtain_weights()
+```
+for saving them in a text file we need to do:
+
+```
+path ="C:/Users/m.casals/Desktop"
+df_wei.print_txt(path)
+```
+In this case we didn't put the 'r' in front of the path, we only changed the slashes.
