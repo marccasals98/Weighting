@@ -98,3 +98,30 @@ path ="C:/Users/m.casals/Desktop"
 df_wei.print_txt(path)
 ```
 In this case we didn't put the 'r' in front of the path, we only changed the slashes.
+
+## Results:
+
+The following file is unblanced and we want to achieve the previous results:
+| 'p8tar' | 'trabr' | 'ciudad' |
+|---------|---------|----------|
+| 57.1%   | 87.3%   | 29.7%    |
+| 22.9%   | 12.7%   | 6.5%     |
+| 20%     |         | 19%      |
+|         |         | 5.7%     |
+|         |         | 20%      |
+|         |         | 7.2%     |
+|         |         | 6.5%     |
+|         |         | 5.5%     |
+
+The results that are obtained are:
+
+| 'p8tar' | 'trabr' | 'ciudad' |
+|---------|---------|----------|
+| 50%     | 76.999% | 42%      |
+| 29.999% | 23%     | 20%      |
+| 20%     |         | 14%      |
+|         |         | 5%       |
+|         |         | 9%       |
+|         |         | 2%       |
+|         |         | 2%       |
+|         |         | 6%       |
