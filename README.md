@@ -101,7 +101,7 @@ In this case we didn't put the 'r' in front of the path, we only changed the sla
 
 ## Results:
 
-The following file is unblanced and we want to achieve the previous results:
+The following file is unblanced:
 | 'p8tar' | 'trabr' | 'ciudad' |
 |---------|---------|----------|
 | 57.1%   | 87.3%   | 29.7%    |
@@ -113,8 +113,19 @@ The following file is unblanced and we want to achieve the previous results:
 |         |         | 6.5%     |
 |         |         | 5.5%     |
 
-The results that are obtained are:
+We want to achieve:
+| 'p8tar' | 'trabr' | 'ciudad' |
+|---------|---------|----------|
+| 50%     | 77%     | 42%      |
+| 30%     | 23%     | 20%      |
+| 20%     |         | 14%      |
+|         |         | 5%       |
+|         |         | 9%       |
+|         |         | 2%       |
+|         |         | 2%       |
+|         |         | 6%       |
 
+The results that are obtained are:
 | 'p8tar' | 'trabr' | 'ciudad' |
 |---------|---------|----------|
 | 50%     | 76.999% | 42%      |
